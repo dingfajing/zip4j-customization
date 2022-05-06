@@ -69,7 +69,7 @@ Zip4j supports JDK 7 as well. In cases where the feature/class from JDK 8 is mis
 
 ```xml
 <dependency>
-    <groupId>customnet.lingala.zip4j</groupId>
+    <groupId>net.lingala.customzip4j</groupId>
     <artifactId>zip4j</artifactId>
     <version>2.9.0</version>
 </dependency>
@@ -435,11 +435,11 @@ new ZipFile("valid_zip_file.zip").isValidZipFile();
 ### Adding entries with ZipOutputStream
 
 ```java
-import customnet.lingala.zip4j.io.outputstream.ZipOutputStream;
-import customnet.lingala.zip4j.model.ZipParameters;
-import customnet.lingala.zip4j.model.enums.AesKeyStrength;
-import customnet.lingala.zip4j.model.enums.CompressionMethod;
-import customnet.lingala.zip4j.model.enums.EncryptionMethod;
+import net.lingala.customzip4j.io.outputstream.ZipOutputStream;
+import net.lingala.customzip4j.model.ZipParameters;
+import net.lingala.customzip4j.model.enums.AesKeyStrength;
+import net.lingala.customzip4j.model.enums.CompressionMethod;
+import net.lingala.customzip4j.model.enums.EncryptionMethod;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -508,8 +508,8 @@ public class ZipOutputStreamExample {
 ### Extract files with ZipInputStream
 
 ```java
-import customnet.lingala.zip4j.io.inputstream.ZipInputStream;
-import customnet.lingala.zip4j.model.LocalFileHeader;
+import net.lingala.customzip4j.io.inputstream.ZipInputStream;
+import net.lingala.customzip4j.model.LocalFileHeader;
 
 import java.io.File;
 import java.io.FileInputStream;
